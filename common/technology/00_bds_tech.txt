@@ -1,0 +1,172 @@
+tech_defense_station_2x = {
+	cost = 5000
+	area = engineering
+	tier = 3
+	category = { voidcraft }
+	prerequisites = { "tech_starbase_2" }
+	weight = 75
+		
+	prereqfor_desc = {
+		ship = {
+			title = "TECH_UNLOCK_DEFENSESTATION_CONSTRUCTION_TITLE"
+			desc = "TECH_UNLOCK_DEFENSESTATION_CONSTRUCTION_DESC"
+		}
+	}
+	
+	weight_modifier = {	
+		modifier = {
+			factor = 0.1
+			years_passed < 26
+		}
+		modifier = {
+			factor = 1
+			years_passed > 25
+		}
+		modifier = {
+			factor = 2
+			years_passed > 30
+		}
+		modifier = {
+			factor = 3
+			years_passed > 35
+		}
+		modifier = {
+			factor = 4
+			years_passed > 40
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+	}
+	
+	ai_weight = { factor = 50 }
+}
+
+tech_defense_station_4x = {
+	cost = 10000
+	area = engineering
+	tier = 4
+	category = { voidcraft }
+	prerequisites = { "tech_starbase_3" "tech_defense_station_2x" }
+	weight = 70
+	is_rare = yes
+		
+	prereqfor_desc = {
+		ship = {
+			title = "TECH_UNLOCK_DEFENSEFORTRESS_CONSTRUCTION_TITLE"
+			desc = "TECH_UNLOCK_DEFENSEFORTRESS_CONSTRUCTION_DESC"
+		}
+	}
+	
+	weight_modifier = {	
+		modifier = {
+			factor = 0.1
+			years_passed < 26
+		}
+		modifier = {
+			factor = 1
+			years_passed > 25
+		}
+		modifier = {
+			factor = 2
+			years_passed > 30
+		}
+		modifier = {
+			factor = 3
+			years_passed > 35
+		}
+		modifier = {
+			factor = 4
+			years_passed > 40
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+	}
+	
+	ai_weight = { factor = 50 }
+}
+
+tech_defense_station_2x_hull = {
+	cost = 5000
+	area = engineering
+	tier = 3
+	category = { voidcraft }
+	prerequisites = { "tech_defense_station_2x" }
+	is_rare = yes
+	weight = 75
+	icon = tech_defense_platform_hull_1
+
+	weight_modifier = {
+		factor = 0.50
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = @federation_perk_factor
+			has_federation = yes
+			federation = {
+				has_federation_perk = rare_tech_boost
+				any_member = { has_technology = tech_defense_station_2x_hull }
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+	}
+
+	modifier = {
+		shipsize_military_station_2x_hull_add = 1000
+	}
+}
+
+tech_defense_station_4x_hull = {
+	cost = 10000
+	area = engineering
+	tier = 4
+	category = { voidcraft }
+	prerequisites = { "tech_defense_station_4x" }
+	is_rare = yes
+	weight = 70
+	icon = tech_defense_platform_hull_1
+
+	weight_modifier = {
+		factor = 0.50
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = @federation_perk_factor
+			has_federation = yes
+			federation = {
+				has_federation_perk = rare_tech_boost
+				any_member = { has_technology = tech_defense_station_4x_hull }
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+	}
+
+	modifier = {
+		shipsize_military_station_4x_hull_add = 2000
+	}
+}

@@ -1,0 +1,67 @@
+﻿l_french:
+ 
+########################
+#  Station Sections    #
+########################
+MISSILE_MILITARY_STATION_SECTION_2X:0 "Missile Station Section"
+LIGHT_MILITARY_STATION_SECTION_2X:0 "Light Station Section"
+PD_MILITARY_STATION_SECTION_2X:0 "Point-Defense Station Section"
+MEDIUM_MILITARY_STATION_SECTION_2X:0 "Medium Station Section"
+HEAVY_MILITARY_STATION_SECTION_2X:0 "Heavy Station Section"
+HANGAR_MILITARY_STATION_SECTION_2X:0 "Hangar Station Section"
+
+MISSILE_MILITARY_STATION_SECTION_4X:0 "Missile Station Section"
+LIGHT_MILITARY_STATION_SECTION_4X:0 "Light Station Section"
+PD_MILITARY_STATION_SECTION_4X:0 "Point-Defense Station Section"
+MEDIUM_MILITARY_STATION_SECTION_4X:0 "Medium Station Section"
+HEAVY_MILITARY_STATION_SECTION_4X:0 "Heavy Station Section"
+HANGAR_MILITARY_STATION_SECTION_4X:0 "Hangar Station Section"
+
+
+################
+#  Reactors    #
+################
+PLATFORM_2X_FISSION_REACTOR:0 "Fission Reactor"
+PLATFORM_2X_FUSION_REACTOR:0 "Fusion Reactor"
+PLATFORM_2X_COLD_FUSION_REACTOR:0 "Cold Fusion Reactor"
+PLATFORM_2X_ANTIMATTER_REACTOR:0 "Antimatter Reactor"
+PLATFORM_2X_ZERO_POINT_REACTOR:0 "Zero Point Reactor"
+PLATFORM_2X_DARK_MATTER_REACTOR:0 "Dark Matter Reactor"
+
+PLATFORM_4X_FISSION_REACTOR:0 "Fission Reactor"
+PLATFORM_4X_FUSION_REACTOR:0 "Fusion Reactor"
+PLATFORM_4X_COLD_FUSION_REACTOR:0 "Cold Fusion Reactor"
+PLATFORM_4X_ANTIMATTER_REACTOR:0 "Antimatter Reactor"
+PLATFORM_4X_ZERO_POINT_REACTOR:0 "Zero Point Reactor"
+PLATFORM_4X_DARK_MATTER_REACTOR:0 "Dark Matter Reactor"
+
+ 
+########################
+#  Defense Stations    #
+########################
+military_station_2x:0 "Defense Station" 
+military_station_2x_plural:0 "Defense Stations"
+military_station_4x:0 "Defense Fortress" 
+military_station_4x_plural:0 "Defense Fortresses"
+
+
+####################
+#  Technologies    #
+####################
+tech_defense_station_2x: "Deep Space Defenses 2: Station"
+tech_defense_station_2x_desc: "This will enable the construction of defensive deep space stations to protect our Starbases."
+TECH_UNLOCK_DEFENSESTATION_CONSTRUCTION_TITLE: "§HUnlocks Station:§! Starbase Defense Station"
+TECH_UNLOCK_DEFENSESTATION_CONSTRUCTION_DESC: "§HStarbase Defense Station§!\nAn upgraded version of the Defense Platform with better weapons and defenses."
+
+tech_defense_station_4x: "Deep Space Defenses 3: Fortress"
+tech_defense_station_4x_desc: "This will enable the construction of defensive deep space fortresses to protect our Starbases."
+TECH_UNLOCK_DEFENSEFORTRESS_CONSTRUCTION_TITLE: "§HUnlocks Station:§! Starbase Defense Fortress"
+TECH_UNLOCK_DEFENSEFORTRESS_CONSTRUCTION_DESC: "§HStarbase Defense Fortress§!\nOne of the largest Starbase defense station available with heavy weaponry and defenses."
+
+tech_defense_station_2x_hull:0 "Improved Structural Integrity: Station"
+tech_defense_station_2x_hull_desc:0 "A reinforced framework and blast shields with enhanced impact absorption will ensure the structural integrity of the platform even under immense pressure."
+mod_shipsize_military_station_2x_hull_add:0 "Defense Station Hull Points"
+
+tech_defense_station_4x_hull:0 "Improved Structural Integrity: Fortress"
+tech_defense_station_4x_hull_desc:0 "A reinforced framework and blast shields with enhanced impact absorption will ensure the structural integrity of the platform even under immense pressure."
+mod_shipsize_military_station_4x_hull_add:0 "Defense Fortresss Hull Points"
