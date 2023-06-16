@@ -1,0 +1,37 @@
+@ambitionDuration = -1
+@ambitionCost = 75
+@ambitionUpkeep = 75
+
+fortress_proclamation = {
+	length = @ambitionDuration
+	icon = "GFX_edict_type_time"
+
+	resources = {
+		category = edicts
+
+		cost = {
+			unity = @ambitionCost
+			multiplier = value:edict_size_effect
+		}
+
+		upkeep = {
+			unity = @ambitionUpkeep
+			multiplier = value:edict_size_effect
+		}
+	}
+
+	modifier = {
+		starbase_upgrade_speed_mult = 1.00
+		shipsize_military_station_small_build_speed_mult = 1.00
+		shipsize_military_station_2x_build_speed_mult = 1.00
+		shipsize_military_station_4x_build_speed_mult = 1.00
+	}
+
+	potential = {
+		has_technology = tech_ascension_theory
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}

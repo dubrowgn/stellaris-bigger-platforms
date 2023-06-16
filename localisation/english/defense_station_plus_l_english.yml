@@ -60,8 +60,10 @@ TECH_UNLOCK_DEFENSEFORTRESS_CONSTRUCTION_DESC: "§HStarbase Defense Fortress§!\
 
 tech_defense_station_2x_hull:0 "Improved Structural Integrity: Station"
 tech_defense_station_2x_hull_desc:0 "A reinforced framework and blast shields with enhanced impact absorption will ensure the structural integrity of the platform even under immense pressure."
-mod_shipsize_military_station_2x_hull_add:0 "Defense Station Hull Points"
+mod_shipsize_military_station_2x_hull_mult:0 "Defense Station Hull Points"
+mod_shipsize_military_station_2x_build_speed_mult:0 "Defense Station Build Speed"
 
 tech_defense_station_4x_hull:0 "Improved Structural Integrity: Fortress"
 tech_defense_station_4x_hull_desc:0 "A reinforced framework and blast shields with enhanced impact absorption will ensure the structural integrity of the platform even under immense pressure."
-mod_shipsize_military_station_4x_hull_add:0 "Defense Fortresss Hull Points"
+mod_shipsize_military_station_4x_hull_mult:0 "Defense Fortresss Hull Points"
+mod_shipsize_military_station_4x_build_speed_mult:0 "Defense Fortress Build Speed"

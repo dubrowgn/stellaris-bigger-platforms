@@ -1,4 +1,4 @@
-version="1.3"
+version="3.8.0"
 tags={
 	"Buildings"
 	"Gameplay"
@@ -6,5 +6,5 @@ tags={
 }
 picture="thumbnail.png"
 name="Bigger Defense Stations"
-supported_version="3.4.*"
+supported_version="3.8.*"
 remote_file_id="2728142059"

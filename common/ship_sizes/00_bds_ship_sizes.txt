@@ -4,7 +4,7 @@ military_station_2x = {
 	max_speed = 6
 	rotation_speed = 10
 	acceleration = 10
-	max_hitpoints = 4000
+	max_hitpoints = 6000
 	modifier = {
 		ship_evasion_mult = -1
 		ships_upkeep_mult = -0.25
@@ -16,10 +16,10 @@ military_station_2x = {
 	combat_size_multiplier = 4
 	size_multiplier = 2
 	fleet_slot_size = 4
-	section_slots = { 
+	section_slots = {
 		"north" = { locator = "part1" }
-		"west" = { locator = "part2" }
-		"east" = { locator = "part3" }
+		"east" = { locator = "part2" }
+		"west" = { locator = "part3" }
 		"south" = { locator = "part4" }
 	}
 	is_designable = yes
@@ -27,7 +27,10 @@ military_station_2x = {
 	takes_name_from_ship_design = yes
 	num_target_locators = 0
 	is_space_station = yes
-	base_buildtime = 108
+	base_buildtime = 120
+
+	use_shipnames_from = military_station_small
+	ship_roles = { gunship screen artillery carrier energy_torpedoes }
 
 	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
 	prerequisites = { "tech_defense_station_2x" }
@@ -59,7 +62,7 @@ military_station_4x = {
 	max_speed = 6
 	rotation_speed = 10
 	acceleration = 10
-	max_hitpoints = 8000
+	max_hitpoints = 12000
 	modifier = {
 		ship_evasion_mult = -1
 		ships_upkeep_mult = -0.25
@@ -73,16 +76,19 @@ military_station_4x = {
 	fleet_slot_size = 8
 	section_slots = {
 		"north" = { locator = "part1" locator = "part2" }
-		"west" = { locator = "part3" locator = "part4" }
 		"east" = { locator = "part5" locator = "part6" }
-		"south" = { locator = "part7" locator = "part8" }
+		"west" = { locator = "part3" locator = "part4" }
+		"south" = { locator = "part8" locator = "part7" }
 	}
 	is_designable = yes
 	uses_name_prefix = no
 	takes_name_from_ship_design = yes
 	num_target_locators = 0
 	is_space_station = yes
-	base_buildtime = 192
+	base_buildtime = 240
+
+	use_shipnames_from = military_station_small
+	ship_roles = { gunship screen artillery carrier energy_torpedoes }
 
 	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
 	prerequisites = { "tech_defense_station_4x" }
