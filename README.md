@@ -35,6 +35,24 @@ These appear to be an issue with specific modifiers in some configuration files,
 * Bulwark Prefabs Overlord/Subject: Defense Station/Fortress cost and upkeep are not correctly adjusted.
 * Fortifier Admiral Trait: Defense Station/Fortress cost and upkeep are not correctly adjusted.
 
+## Testing (Stellaris Console Commands)
+
+Research all tech
+```
+research_all_technologies
+```
+
+Add/remove trait `trait_ruler_fortifier` to lead at index `6`
+```
+add_trait_leader 6 trait_ruler_fortifier
+remove_trait_leader 6 trait_ruler_fortifier
+```
+
+Give 10k Alloys to the current player
+```
+resource alloys 10000
+```
+
 ## Links
 
 * [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=2728142059)
